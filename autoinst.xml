@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE profile>
+<profile xmlns="http://www.suse.com/1.0/yast2ns" xmlns:config="http://www.suse.com/1.0/configns">
+  <general>
+    <mode>
+      <confirm config:type="boolean">false</confirm>
+      <second_stage config:type="boolean">false</second_stage>
+      <max_systemd_wait config:type="integer">3600</max_systemd_wait>
+      <forceboot config:type="boolean">true</forceboot>
+      <final_restart_services config:type="boolean">false</final_restart_services>
+      <final_reboot config:type="boolean">true</final_reboot>
+    </mode>
+  </general>
+  <networking>
+    <keep_install_network config:type="boolean">true</keep_install_network>
+  </networking>
+  <software>
+    <patterns config:type="list">
+      <pattern>directory_server</pattern>
+    </patterns>
+    <packages config:type="list">
+      <package>apache</package>
+      <package>postfix</package>
+    </packages>
+    <do_online_update config:type="boolean">false</do_online_update>
+    <install_recommended config:type="boolean">true</install_recommended>
+  </software> 
+  <users config:type="list">
+    <user>:wq
+      <encrypted config:type="boolean">false</encrypted>
+      <fullname>root</fullname>
+      <gid>0</gid>
+      <home>/root</home>
+      <password_settings>
+        <expire></expire>
+        <flag></flag>
+        <inact></inact>
+        <max></max>
+        <min></min>
+        <warn></warn>
+      </password_settings>
+      <shell>/bin/bash</shell>
+      <uid>0</uid>
+      <user_password>s3cr3t</user_password>
+      <username>root</username>
+    </user>
+  </users>
+</profile>
