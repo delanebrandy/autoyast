@@ -23,10 +23,9 @@
       <package>postfix</package>
     </packages>
     <do_online_update config:type="boolean">false</do_online_update>
-    <install_recommended config:type="boolean">true</install_recommended>
   </software> 
   <users config:type="list">
-    <user>:wq
+    <user>
       <encrypted config:type="boolean">false</encrypted>
       <fullname>root</fullname>
       <gid>0</gid>
