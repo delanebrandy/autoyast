@@ -1,14 +1,23 @@
 <?xml version="1.0"?>
 <!DOCTYPE profile>
 <profile xmlns="http://www.suse.com/1.0/yast2ns" xmlns:config="http://www.suse.com/1.0/configns">
+  <scripts>
+    <chroot-scripts config:type="list">
+      <script>
+        <chrooted config:type="boolean">true</chrooted>
+              <interpreter>shell</interpreter>
+      <source><![CDATA[ echo "workaround"
+      reboot
+      ]]>
+      </source>
+      </script>
+    </chroot-scripts>
+  </scripts>
   <general>
     <mode>
       <confirm config:type="boolean">false</confirm>
-      <second_stage config:type="boolean">false</second_stage>
       <max_systemd_wait config:type="integer">3600</max_systemd_wait>
       <forceboot config:type="boolean">true</forceboot>
-      <final_restart_services config:type="boolean">false</final_restart_services>
-      <final_reboot config:type="boolean">true</final_reboot>
     </mode>
   </general>
   <networking>
@@ -22,7 +31,7 @@
       <package>apache</package>
       <package>postfix</package>
     </packages>
-    <do_online_update config:type="boolean">false</do_online_update>
+    
   </software> 
   <users config:type="list">
     <user>
