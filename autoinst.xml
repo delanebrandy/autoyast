@@ -7,7 +7,10 @@
         <chrooted config:type="boolean">true</chrooted>
         <filename>reboot.sh</filename>
         <interpreter>shell</interpreter>
-      <source><![CDATA[ echo "workaround"
+      <source><![CDATA[ 
+      #!/bin/sh
+      
+      echo "workaround"
       shutdown
       ]]>
       </source>
