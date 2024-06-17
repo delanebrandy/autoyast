@@ -5,7 +5,13 @@
     <install_recommended config:type="boolean">true</install_recommended>
     <do_online_update config:type="boolean">false</do_online_update>
     <patterns config:type="list">
-      <pattern>directory_server</pattern>
+      <pattern>base</pattern>
+      <pattern>enhanced_base</pattern>
+      <pattern>minimal_base</pattern>
+      <pattern>apparmor</pattern>
+      <pattern>sw_managment</pattern>
+      <pattern>yast2_basic</pattern>
+      <pattern>yast2_server</pattern>
     </patterns>
   </software>
 
