@@ -7,7 +7,7 @@
     <patterns config:type="list">
       <pattern>enhanced_base</pattern>
       <pattern>apparmor</pattern>
-      <pattern>yast2_basic</pattern>
+      <pattern>yast2_basis</pattern>
       <pattern>yast2_server</pattern>
     </patterns>
   </software>
@@ -17,6 +17,13 @@
       <confirm config:type="boolean">false</confirm>
     </mode>
   </general>
+
+  <networking>
+    <dns>
+      <dhcp_hostname config:type="boolean">true</dhcp_hostname>
+      <hostname>stone</hostname>
+    </dns>
+  </networking> 
 
   <users config:type="list">
     <user>
