@@ -12,10 +12,6 @@
     </patterns>
   </software>
 
-  <networking>
-    <backend>none</backend>
-  </networking>
-
   <general>
     <mode>
       <confirm config:type="boolean">false</confirm>
