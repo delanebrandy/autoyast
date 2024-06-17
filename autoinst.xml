@@ -5,11 +5,7 @@
     <install_recommended config:type="boolean">true</install_recommended>
     <do_online_update config:type="boolean">false</do_online_update>
     <patterns config:type="list">
-      <pattern>base</pattern>
-      <pattern>enhanced_base</pattern>
-      <pattern>yast2_basis</pattern>
-      <pattern>x11_yast</pattern>
-      <pattern>x11</pattern>
+      <pattern>directory_server</pattern>
     </patterns>
   </software>
 
